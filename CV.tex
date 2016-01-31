@@ -1,0 +1,113 @@
+%-----------------------------------------------------
+% Simon M. Mudd CV
+%
+% This CV is loosely based on the template produced by
+% Dario Taraborelli
+% URL: http://nitens.org/taraborelli/cvtex
+%----------------------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5.75in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+
+
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+%columns
+\usepackage{multicol}
+\setlength{\columnsep}{10pt}
+%\def\columnseprulecolor{\color{White}}
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[bookmarks, colorlinks, breaklinks,
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Simon M. Mudd - vita},
+	pdfauthor={Simon M. Mudd},
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
+
+%Colours
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{Gray}{rgb}{0.3,0.3,0.3}
+\definecolor{LightGray}{rgb}{0.6,0.6,0.6}
+
+% Header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{LightGray}{SWD Grieve, 31 January, 2016}}
+\renewcommand{\footrulewidth}{1pt}
+\rfoot{\textcolor{LightGray}{Page \thepage}}
+
+%urls
+\usepackage{url}
+
+% DOCUMENT
+\begin{document}
+
+{\LARGE Stuart William David Grieve}\\
+\textcolor{Gray}{\large{PhD Student}}\\[0.2cm]
+
+\begin{multicols}{2}
+University of Edinburgh\\
+School of GeoSciences\\
+Drummond Street\\
+Edinburgh, EH8 9XP\\
+United Kingdom
+
+\columnbreak
+
+Phone: \texttt{+44~(0)131~650~9170}\\
+email: \href{mailto:s.grieve@ed.ac.uk}{s.grieve@ed.ac.uk}\\
+Web: \href{http://www.geos.ed.ac.uk/homes/s0675405/}{http://www.geos.ed.ac.uk/homes/s0675405/}\\
+Blog: \href{http://sgrieve.github.io/}{http://sgrieve.github.io/}\\
+Google Scholar: \href{https://scholar.google.co.uk/citations?user=VwQbAzQAAAAJ&hl=en}{Stuart W D Grieve}\\
+Github: \href{https://github.com/sgrieve}{sgrieve}
+
+\end{multicols}
+
+\hrule
+
+\hrule
+\section*{Appointments}
+\noindent
+\years{2014--}\textbf{Reader} in Landscape Dynamics: School of GeoSciences, University of Edinburgh, UK\\[0.05cm]
+\years{2013--2014}\textbf{Senior Lecturer} in Landscape Dynamics: School of GeoSciences, University of Edinburgh, UK\\[0.05cm]
+\years{2007--2013}\textbf{Lecturer} in Landscape Dynamics: School of GeoSciences, University of Edinburgh, UK\\[0.05cm]
+\years{2006--2007}\textbf{Research Associate}: Department of Earth and Environmental Sciences, Vanderbilt University, US
+A\\[0.05cm]
+
+
+
+
+
+
+\end{document}
