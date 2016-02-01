@@ -42,6 +42,22 @@
 \subsectionfont{\mdseries\scshape\normalsize}
 \subsubsectionfont{\mdseries\upshape\large}
 
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or January% 1
+  \or February% 2
+  \or March% 3
+  \or April% 4
+  \or May% 5
+  \or June% 6
+  \or July% 7
+  \or August% 8
+  \or September% 9
+  \or October% 10
+  \or November% 11
+  \or December% 12
+  \fi}
+
 %columns
 \usepackage{multicol}
 \setlength{\columnsep}{10pt}
@@ -65,7 +81,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\textcolor{LightGray}{SWD Grieve, 31 January, 2016}}
+\rhead{\textcolor{LightGray}{SWD Grieve -- \MONTH \ \the\year}}
 \renewcommand{\footrulewidth}{1pt}
 \rfoot{\textcolor{LightGray}{Page \thepage}}
 
