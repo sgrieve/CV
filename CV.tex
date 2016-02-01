@@ -19,6 +19,30 @@
 \geometry{a4paper, textwidth=5.75in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
+%FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+%For gentium, you should install the font from here: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=Gentium_basic
+%\setromanfont [Ligatures={Common}, BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
+
+%For fontin font, you should install the font from here: http://www.exljbris.com/fontin.html
+%\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
+
+%For linux libertine font, you should install from fontsquirrel, http://www.fontsquirrel.com/
+% This one seems to be happiest! Least bad boxes. And looks nice
+%\setromanfont [Ligatures={Common}, BoldFont={Linux Libertine Bold}, ItalicFont={Linux Libertine Italic}]{Linux Libertine}
+
+%For Liberation Serif font, you should install from fontsquirrel, http://www.fontsquirrel.com/
+%\setromanfont [Ligatures={Common}, BoldFont={Liberation Serif Bold}, ItalicFont={Liberation Serif Italic}]{Liberation Serif}
+
+%For Heuristica Serif font, you should install from fontsquirrel, http://www.fontsquirrel.com/
+% This one also seems to make XeLaTeX happy
+\setromanfont [Ligatures={Common}, BoldFont={Heuristica Bold}, ItalicFont={Heuristica Italic}]{Heuristica}
+
+%\setmonofont[Scale=0.8]{Heuristica}
+
+\usepackage{fontawesome}
 
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
@@ -92,7 +116,7 @@
 \begin{document}
 
 {\LARGE Stuart William David Grieve}\\
-\textcolor{Gray}{\large{PhD Student}}\\[0.1cm]
+\textcolor{Gray}{\large{PhD Student}}
 
 \begin{multicols}{2}
 University of Edinburgh\\
@@ -103,12 +127,12 @@ United Kingdom
 
 \columnbreak
 
-Phone: \texttt{+44~(0)131~650~9170}\\
-email: \href{mailto:s.grieve@ed.ac.uk}{s.grieve@ed.ac.uk}\\
-Web: \href{http://www.geos.ed.ac.uk/homes/s0675405/}{geos.ed.ac.uk/homes/s0675405/}\\
-Blog: \href{http://sgrieve.github.io/}{sgrieve.github.io/}\\
-Google Scholar: \href{https://scholar.google.co.uk/citations?user=VwQbAzQAAAAJ&hl=en}{Stuart W D Grieve}\\
-Github: \href{https://github.com/sgrieve}{sgrieve}
+\faPhone \ \ \texttt{+44~(0)131~650~9170}\\
+\faEnvelope \ \ \href{mailto:s.grieve@ed.ac.uk}{s.grieve@ed.ac.uk}\\
+\faGithub \ \ \href{https://github.com/sgrieve}{sgrieve}\\
+%Web: \href{http://www.geos.ed.ac.uk/homes/s0675405/}{geos.ed.ac.uk/homes/s0675405/}\\
+\textbf{Blog}: \href{http://sgrieve.github.io/}{sgrieve.github.io/}\\
+\textbf{Google Scholar}: \href{https://scholar.google.co.uk/citations?user=VwQbAzQAAAAJ&hl=en}{Stuart W D Grieve}
 
 \end{multicols}
 
@@ -119,11 +143,11 @@ Github: \href{https://github.com/sgrieve}{sgrieve}
 \textit{Using high resolution topography and dated sedimentation rates to constrain the rates of sediment transport and landslide frequency.}\\[0.05cm]
 Supervisors: Dr Simon M Mudd and Dr Tristram C Hales (Cardiff University)\\
 
-\years{2011--2012}\textbf{M.Sc. in Geographical Information Science}(Distinction) University of Edinburgh\\[0.05cm]
+\years{2011--2012}\textbf{M.Sc. in Geographical Information Science} (Distinction) University of Edinburgh\\[0.05cm]
 Thesis Title: \textit{An automated analysis of the southern San Andreas Fault to explore topography’s relationship with tectonics.}\\[0.05cm]
 Supervisor: Dr Simon M Mudd\\
 
-\years{2007--2011}\textbf{B.Sc. (Hons.) in Geology and Physical Geography}(2:1) University of Edinburgh\\[0.05cm]
+\years{2007--2011}\textbf{B.Sc. (Hons.) in Geology and Physical Geography} (2:1) University of Edinburgh\\[0.05cm]
 Thesis Title: \textit{The Influence of Climate Change on Landslide Sediment Yields in the Northern Lake District.}\\[0.05cm]
 
 \hrule
