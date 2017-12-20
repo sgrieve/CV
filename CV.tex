@@ -45,10 +45,6 @@
 \usepackage{fontawesome}
 \usepackage{academicons}
 
-% Setting up conditionals so we can either show or hide the statements in the cv
-\newif\iflong
-\longtrue % comment out to hide statements
-
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
 \newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
@@ -175,6 +171,9 @@ Awarded to support my work developing sustainable geoscience software\\[0.05cm]
 \years{2017}\textbf{Wiley Award} from the British Society for Geomorphology\\[0.05cm]
 Awarded for the best paper published in \textit{Earth Surface Processes and Landforms} in 2016\\[0.05cm]
 
+
+% Setting up conditionals so we can either show or hide the statements in the cv
+% Will throw errors if not built using build.sh
 \iflong
 
   \hrule
