@@ -162,3 +162,4 @@ pythontex-files-*/
 TSWLatexianTemp*
 
 CV_no_statements.pdf
+*.xdv
