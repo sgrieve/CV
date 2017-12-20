@@ -45,6 +45,9 @@
 \usepackage{fontawesome}
 \usepackage{academicons}
 
+% Setting up conditionals so we can either show or hide the statements in the cv
+\newif\iflong
+\longtrue % comment out to hide statements
 
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
@@ -172,23 +175,27 @@ Awarded to support my work developing sustainable geoscience software\\[0.05cm]
 \years{2017}\textbf{Wiley Award} from the British Society for Geomorphology\\[0.05cm]
 Awarded for the best paper published in \textit{Earth Surface Processes and Landforms} in 2016\\[0.05cm]
 
-\hrule
-\section*{Research Statement}
-\noindent
+\iflong
 
-My research aims to develop an understanding of how signals of change, such as those driven by tectonics or the environment, manifest in the surface morphology of the Earth and other planetary bodies. In particular, I aim to bridge the gap between numerical models, remotely sensed data and field observations and I conduct such research through the development of open source software which facilitates reproducible analysis, with a particular focus on the processing of high resolution topographic data. Such software allows repeatable experiments to be performed on both terrestrial and planetary landscapes, at a range of scales spanning individual hillslopes to continental scale features. I also work on the development application of cutting edge GIS and computer science techniques to enhance surface process research, through the analysis of complex spatial information combined with novel data collection approaches and high performance computing.\\[0.05cm]
+  \hrule
+  \section*{Research Statement}
+  \noindent
 
-%\hrule
-\section*{Teaching Statement}
-\noindent
+  My research aims to develop an understanding of how signals of change, such as those driven by tectonics or the environment, manifest in the surface morphology of the Earth and other planetary bodies. In particular, I aim to bridge the gap between numerical models, remotely sensed data and field observations and I conduct such research through the development of open source software which facilitates reproducible analysis, with a particular focus on the processing of high resolution topographic data. Such software allows repeatable experiments to be performed on both terrestrial and planetary landscapes, at a range of scales spanning individual hillslopes to continental scale features. I also work on the development application of cutting edge GIS and computer science techniques to enhance surface process research, through the analysis of complex spatial information combined with novel data collection approaches and high performance computing.\\[0.05cm]
 
-My teaching, as with my research, focuses on the implementation and application of quantitative and computational methods, as a framework to understand Earth surface processes. I am passionate about engaging students to interpret landscapes and the processes which act upon them both in a classroom and field setting. I have experience of teaching theoretical and applied GIS, either within the context of physical geography or a number of other disciplines (transport planning, infrastructure, crime research, archaeology) at both an undergraduate and postgraduate level. Aside from teaching physical geography and GIS, I also enjoy teaching scientific programming to students, giving them a grounding in data analysis and visualisation which can be employed throughout their time in education and beyond. Such skills are vital for students and I believe I am well placed to teach these skills within a physical science context.\\[0.05cm]
+  %\hrule
+  \section*{Teaching Statement}
+  \noindent
 
-\hrule
-\section*{Technical Skills}
-\noindent
+  My teaching, as with my research, focuses on the implementation and application of quantitative and computational methods, as a framework to understand Earth surface processes. I am passionate about engaging students to interpret landscapes and the processes which act upon them both in a classroom and field setting. I have experience of teaching theoretical and applied GIS, either within the context of physical geography or a number of other disciplines (transport planning, infrastructure, crime research, archaeology) at both an undergraduate and postgraduate level. Aside from teaching physical geography and GIS, I also enjoy teaching scientific programming to students, giving them a grounding in data analysis and visualisation which can be employed throughout their time in education and beyond. Such skills are vital for students and I believe I am well placed to teach these skills within a physical science context.\\[0.05cm]
 
-Accomplished programmer comfortable with object orientated concepts and a range of languages \textbf{(C++, Python, Java)} and the use of version control \textbf{(git, subversion)} to manage large projects. Extensive experience in desktop \textbf{(ArcGIS, FME, Whitebox, QGIS)} and web based \textbf{(MapBox, Mapguide)} GIS to solve complex spatial problems. Managing large spatial and non-spatial datasets using SQL databases \textbf{(Oracle, PostgreSQL, MySQL, SQLite)}. Development of novel geospatial analyses to answer scientific questions. Processing raw LiDAR point clouds to produce bare earth DEMs.\\[0.05cm]
+  \hrule
+  \section*{Technical Skills}
+  \noindent
+
+  Accomplished programmer comfortable with object orientated concepts and a range of languages \textbf{(C++, Python, Java)} and the use of version control \textbf{(git, subversion)} to manage large projects. Extensive experience in desktop \textbf{(ArcGIS, FME, Whitebox, QGIS)} and web based \textbf{(MapBox, Mapguide)} GIS to solve complex spatial problems. Managing large spatial and non-spatial datasets using SQL databases \textbf{(Oracle, PostgreSQL, MySQL, SQLite)}. Development of novel geospatial analyses to answer scientific questions. Processing raw LiDAR point clouds to produce bare earth DEMs.\\[0.05cm]
+
+\fi
 
 \hrule
 \section*{Other Employment}
