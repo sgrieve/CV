@@ -6,9 +6,9 @@
 if [ "$1" = "short" ]
 then
   cp CV.tex tmp.tex
-  xelatex tmp.tex
+  xelatex "\newif\iflong \input{tmp.tex}"
   mv tmp.pdf CV_short.pdf
   rm tmp.*
 else
-  xelatex CV.tex
+  xelatex "\newif\iflong \longtrue \input{CV.tex}"
 fi
